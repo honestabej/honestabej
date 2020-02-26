@@ -129,6 +129,13 @@ public class SimpleList {
 	}
 	
 	// Returns last element of the list
+	public int last() {
+		if (count != 0) {
+			return simpleList[count - 1];
+		} else {
+			return -1;
+		}
+	}
 	
 	// Creates a string and concats the ints in the array onto the end of it with spaces in between numbers
 	@Override
