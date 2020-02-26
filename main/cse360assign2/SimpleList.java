@@ -4,6 +4,7 @@
 // Contents: This file contains a method that creates an array of size 10 and other methods which allow you to do things
 //           with that array such as add numbers to the beginning of the array, search the array, remove elements, and 
 //			 display the array in order. It also can increase and decrease the size of the array when meeting certain requirements.
+// Github: https://github.com/honestabej/honestabej
 
 package cse360assign2;
 
@@ -120,8 +121,14 @@ public class SimpleList {
 	
 	// Returns first element of the list
 	public int first() {
-		return simpleList[0];
+		if (count != 0) {
+			return simpleList[0];
+		} else {
+			return -1;
+		}
 	}
+	
+	// Returns last element of the list
 	
 	// Creates a string and concats the ints in the array onto the end of it with spaces in between numbers
 	@Override
